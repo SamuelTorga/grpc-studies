@@ -1,0 +1,6 @@
+applicationType: grpc
+defaultPackage: br.com.samueltorga
+testFramework: junit
+sourceLanguage: java
+buildTool: maven
+features: [app-name, data, data-mongodb-reactive, discovery-core, grpc, http-client-test, java, java-application, junit, log4j2, lombok, maven, maven-enforcer-plugin, properties, readme, serialization-jackson, shade, test-resources]

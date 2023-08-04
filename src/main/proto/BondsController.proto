@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+option java_multiple_files = true;
+
+package br.com.samueltorga.protobuf;
+
+import "types/DecimalValue.proto";
+
+service BondsController {
+  rpc create (BondRequest) returns (BondReply) {}
+}
+
+message BondRequest {
+  string name = 1;
+  string dueDate = 2;
+  DecimalValue value = 3;
+  DecimalValue receiveTax = 4;
+}
+
+message BondReply {
+  string id = 1;
+}
